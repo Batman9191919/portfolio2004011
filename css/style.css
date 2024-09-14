@@ -330,6 +330,7 @@ section.about .social a img{
 
 
 .contactcontainer .contact h1{
+    display: block;
     margin-bottom: 1.2rem;
     text-transform: uppercase;
     
@@ -390,7 +391,8 @@ section.about .social a img{
 }
 
 .btn-primaryconatct{
-    margin-top: 0.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     background-color:var(--dark) ;
     color: var(--logo);
     border: none;
@@ -554,7 +556,6 @@ main.row{
     height: 100rem;
     background: linear-gradient(10deg, var(--logo), white );
 
-    font-family: 'suse';
     
 }
 
@@ -573,7 +574,7 @@ main.row{
 }
 .skillcontainer .left{
     font-family: 'suse';
-    display: flex
+    display: flex;
  
 
 
@@ -597,13 +598,12 @@ main.row{
 
 
 .progresscontainer .expertise-section h2{
-    font-size: 30px;
+    font-size: 40px;
     text-transform: uppercase;
     letter-spacing: 1.5px;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: var(--dark);
-	color: var(--white);
-    font-family: helvetica;
+
+	color: var(--dark);
+    
 
 	
 }
@@ -612,12 +612,14 @@ main.row{
 
 .skill {
     margin-bottom: 20px;
+    font-weight: 800;
     color: var(--dark);
 }
 
 .skill p {
 
-    font-size: 16px;
+    font-size: 20px;
+    font-weight: 500;
     margin-top: 1.5rem;
     color: var(--dark);
     
@@ -637,7 +639,7 @@ main.row{
 
 /* Add hover effect */
 .language-list li:hover {
-    background-color: var(--white);
+    background-color: var(--dark);
     color: var(--dark); /* Darker blue on hover */
 }
 
@@ -650,10 +652,7 @@ main.row{
 
 }
 
-.progresscontainer .expertise-section h2{
-    
-    
-}
+
 
 .progress-bar {
 
@@ -661,7 +660,7 @@ main.row{
     height: 7px;
     background-color: var(--white);
     border-radius: 3px;
-    border-color: 4px var(--dark);
+    border-color: 1px var(--dark);
     
 }
 .progress-bar-container :hover {
@@ -803,4 +802,25 @@ main.row{
    
    color: var(--logo);
     
+}
+
+.cursor {
+    font-weight: bold;
+    font-size: 24px;
+    color: black;
+    animation: blink 0.7s steps(1) infinite;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+#dynamic-text {
+    font-size: 20px;
+    color: var(--white);
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
 }

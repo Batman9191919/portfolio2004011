@@ -51,11 +51,56 @@
                 </div>
                 <div class="right left flex1">
                     <h4>Hayatul Islam Navin</h4>
-                    <h1>I am an <span class="line-break"> Electronics and Telecommunication Engineer</span> </h1>
-                    <p>IoT Enthusiast | Programmer | PCB Designer | COMSOL Researcher (Plasmonics)</p>
-                    <div>
-                        <a href="cv_2.pdf" download target="_blank"> <button class="btn btn-secondary">Download CV</button> </a>
+                    <h1>I am an <span class="line-break">Electronics and Telecommunication Engineer</span></h1>
+                    <!-- <div class="wrapper">
+                        <div class="typing-demo">
+                            <p>IoT Enthusiast | Programmer | PCB Designer |Researcher</p>
+                        </div>
+                    </div> -->
+                    <div class="wrapper">
+                        <div class="typing-demo">
+                            <p id="dynamic-text"></p> <!-- Dynamic text will appear here -->
+                            <span class="cursor">|</span> <!-- Blinking cursor -->
+                        </div>
                     </div>
+                    <script>
+                        const text = "IoT Enthusiast | Programmer | PCB Designer |Researcher";
+                        let currentLetter = 0;
+                        const typingSpeed = 120; // Speed of typing in milliseconds
+                        const delayBetweenTypingAndErasing = 2000; // Delay before starting to erase after fully typing
+                        const textElement = document.getElementById("dynamic-text");
+                    
+                        function type() {
+                           
+                            if (currentLetter < text.length) {
+                                textElement.innerHTML += text.charAt(currentLetter);
+                                currentLetter++;
+                                setTimeout(type, typingSpeed);
+                            } else {
+                                setTimeout(erase, delayBetweenTypingAndErasing); // Start erasing after a short delay
+                            }
+                        }
+                    
+                        function erase() {
+                            textElement.innerHTML = ''; // Clear the entire line at once
+                            currentLetter = 0; // Reset the current letter index
+                            setTimeout(type, typingSpeed); // Restart typing after clearing
+                        }
+                    
+                        // Start typing effect when DOM is ready
+                        document.addEventListener("DOMContentLoaded", () => {
+                            setTimeout(type, typingSpeed);
+                        });
+                    </script>
+                    
+                    
+                    
+                        
+                    
+                    
+                    <div>
+    <a href="cv_2.pdf" download target="_blank"> <button class="btn btn-secondary">Download CV</button> </a>
+</div>
                 </div>
             </div>
         </div>
