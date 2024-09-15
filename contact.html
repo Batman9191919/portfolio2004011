@@ -50,6 +50,31 @@
                     <h1>Contact me</h1>
                     <h4>+8801624368662 <span> hayatul.navin1978@gmail.com</span><br> Address: Rajshahi</h4>
                     <div class="contact-form">
+
+                        <script >document.addEventListener("DOMContentLoaded", () => {
+                            const form = document.querySelector("#form")
+                        
+                            form.addEventListener("submit", (event) => {
+                                event.preventDefault()
+                                const formData = new FormData(form)
+                                const obj = Object.fromEntries(formData)
+                                const json = JSON.stringify(obj)
+                        
+                                fetch("http://localhost:3000/user", {
+                                    method: "POST",
+                                    headers: {'Content-Type': 'application/json'},
+                                    body: json,
+                                    mode: 'cors'})
+                                    .then(response => response.json)
+                                    .then(data => console.log(data))
+                                    .catch(error => {
+                                        console.log(error)
+                                    })
+                            })
+                        })</script>
+
+
+
                         <form action="#" method="post" id="form">
                             <input type="text" name="name" placeholder="Name" required>
                             <input type="email" name="email" placeholder="Email" required>
@@ -74,6 +99,6 @@
         </div>
         
     </header>
-    <script src="/js/form.js"></script>
+
 </body>
 </html>

@@ -231,7 +231,7 @@ img {
 
 
 section.about .aboutimg {
-    width: 600px;
+    width: 400px;
     margin-left: 5rem;
   }
 section.about h1{
@@ -376,14 +376,16 @@ section.about .social a img{
     
 }
 .contact-form input, .contact-form textarea {
+    border-radius: 5px;
+    font-size: 16px;
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
     border: 1px solid var(--logo)
-    border-radius: 5px;
-    font-size: 16px;
+    
 
 }
+
 .contact-form textarea {
     resize: none;
     height: 100px;
@@ -402,7 +404,7 @@ section.about .social a img{
     
 }
 
-}
+
 .btn-primaryconatct:hover{
     background: transparent;
     
@@ -474,7 +476,6 @@ main.row{
 	font-size: 19px;
 	padding: 10px 0px 6px;
 	font-family: helvetica;
-	color: ;
 }
 .box p{
 	line-height: 1.2;
@@ -608,7 +609,7 @@ main.row{
 	
 }
    
-}
+
 
 .skill {
     margin-bottom: 20px;
@@ -644,11 +645,13 @@ main.row{
 }
 
 .progress-bar-container {
-    border: 1px solid var(--dark);
-    background-color: var(--dark)
-    margin-top: 5px;
+    margin-top : 5px;
     height: 8px;
     border-radius: 3px;
+    border: 1px solid var(--dark);
+    background-color: var(--dark)
+   
+    
 
 }
 
@@ -678,7 +681,7 @@ main.row{
 .skill:nth-child(6) .progress-bar { width: 90%; } /* PCB Design */
 .skill:nth-child(7) .progress-bar { width: 85%; } /* Sensors */
 .skill:nth-child(8) .progress-bar { width: 80%; } /* Arduino */
-</style>
+
 
 
 .extracurricontainer{
@@ -686,11 +689,11 @@ main.row{
 }
 
 .extracurricular-section {
-    
+    border-radius: 8px;
     margin-left: 30rem;
     margin-bottom: 2rem;
     background-color: transparent
-    border-radius: 8px;
+    
 
     
    
@@ -704,11 +707,12 @@ main.row{
 }
 
 .extracurricular-section h2 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
     margin-bottom: 2rem;
     font-size: 32px;
     color: var(--logo)
-    text-transform: uppercase;
-    letter-spacing: 2px;
+    
 }
 
 .extracurricular-list {
