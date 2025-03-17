@@ -305,7 +305,7 @@ section.about .social a img{
     padding:0.5rem;
 }
 /* mobile version of home page */
-@media (max-width: 768px) {
+@media (max-width: 500px) {
     header.headerhome {
         height: 30rem;
         clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 90%, 0 100%);
