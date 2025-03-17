@@ -232,6 +232,7 @@ img {
 
 section.about .aboutimg {
     width: 400px;
+    margin-right: 5rem;
     margin-left: 5rem;
   }
 section.about h1{
@@ -307,17 +308,13 @@ section.about .social a img{
 
 
 .headercontact {
-    height: 55rem;
+    height: 30%;
     background-color: var(--dark)
-    
-
-
 }
 
 
 
 .contactcontainer {
-    margin-top: 5rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -395,8 +392,9 @@ section.about .social a img{
 .btn-primaryconatct{
     margin-top: 1rem;
     margin-bottom: 1rem;
+    border: 2px solid var(--logo);
     background-color:var(--dark) ;
-    color: var(--logo);
+    color: var(--white);
     border: none;
     border-radius: 5px;
     font-size: 16px;
@@ -406,10 +404,12 @@ section.about .social a img{
 
 
 .btn-primaryconatct:hover{
+    stroke: black;
     background: transparent;
+    border: 2px solid black;
+    color:var(--dark)
     
-    border-color: var(--logo);
-    color:var(--logo)
+    
 
     
 }
@@ -641,7 +641,7 @@ main.row{
 /* Add hover effect */
 .language-list li:hover {
     background-color: var(--dark);
-    color: var(--dark); /* Darker blue on hover */
+    color: var(--logo); /* Darker blue on hover */
 }
 
 .progress-bar-container {
@@ -760,18 +760,25 @@ main.row{
 
 .res{
     background: linear-gradient(-45deg, var(--logo), white );
+    
+    
+    gap: 2rem; /* Adds spacing between left and right sections */
 }
 
-.rescontent{
-   
-    margin-top: 10rem;
-    margin-left: 10rem;
-    margin-right: 10rem;
-    margin-bottom: 10rem;
-    padding: 5rem;
-    background-color: var(--white)
+.rescontent {
+    display: flex;
+    margin: 5rem;
+    top: 50%;
+    bottom: 50%;
+    
+    left: 50%; /* Centers horizontally */
+    width: 90%; /* Adjust width as needed */
+    background-color: white; /* Ensure the background is white */
+    padding: 2rem; /* Add padding for spacing */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for better visibility */
+    border-radius: 20px; /* Rounded corners */
+    overflow-y: hidden
 }
-
 .rescontent .left{
     
     margin-right: 2rem;
@@ -827,4 +834,9 @@ main.row{
     white-space: nowrap;
     overflow: hidden;
     display: inline-block;
+}
+
+
+.lower-image {
+    margin-left: 5rem; /* Adjust this value to move the image to the left */
 }
