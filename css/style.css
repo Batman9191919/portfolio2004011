@@ -304,8 +304,54 @@ section.about .social a img{
     height:100%;
     padding:0.5rem;
 }
+/* mobile version of home page */
+@media (max-width: 768px) {
+    header.headerhome {
+        height: 30rem;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 90%, 0 100%);
+    }
 
+    header nav .logo img {
+        width: 50px;
+    }
 
+    header nav .left a {
+        margin-right: 1rem;
+        font-size: 0.9rem;
+    }
+
+    .Hero .left img {
+        margin-left: 2rem;
+        width: 200px;
+    }
+
+    .Hero .right h1 {
+        font-size: 2rem;
+    }
+
+    .Hero .right h4 {
+        font-size: 1.2rem;
+    }
+
+    section.about .aboutimg {
+        width: 100%;
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .btn {
+        padding: 0.5rem 1.5rem;
+        font-size: 0.9rem;
+    }
+
+    .dropdown-content {
+        min-width: 80px;
+    }
+
+    .dropdown-content a {
+        padding: 8px 12px;
+    }
+}
 
 .headercontact {
     height: 30%;
@@ -837,6 +883,3 @@ main.row{
 }
 
 
-.lower-image {
-    margin-left: 5rem; /* Adjust this value to move the image to the left */
-}
